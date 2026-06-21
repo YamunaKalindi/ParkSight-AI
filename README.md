@@ -212,37 +212,37 @@ The system focuses on transforming raw parking data into intuitive visual intell
 ---
 
 # 📂 Project Structure
+
 ```text
 ParkSight-AI/
 │
 ├── app.py
+├── requirements.txt
+├── README.md
 │
 ├── pages/
-│ ├── overview.py
-│ ├── heatmaps.py
-│ ├── hotspots.py
-│ └── recommendations.py
+│   ├── overview.py
+│   ├── heatmaps.py
+│   ├── hotspots.py
+│   └── recommendations.py
 │
 ├── data/
-│ └── parking_intelligence_with_cis.csv
+│   └── parking_intelligence_with_cis.csv
 │
 ├── outputs/
-│ ├── junction_hotspots.csv
-│ ├── station_summary.csv
-│ └── hourly_risk.csv
+│   ├── junction_hotspots.csv
+│   ├── station_summary.csv
+│   └── hourly_risk.csv
 │
 ├── assets/
-│ ├── violation_heatmap.html
-│ ├── cis_heatmap.html
-│ └── hourly_heatmaps/
-│
-├── requirements.txt
-└── README.md
-
+│   ├── violation_heatmap.html
+│   ├── cis_heatmap.html
+│   └── hourly_heatmaps/
+│       ├── hour_0.html
+│       ├── hour_1.html
+│       ├── ...
+│       └── hour_23.html
 ```
-
----
-
 # 🚀 Installation
 
 Clone the repository:
