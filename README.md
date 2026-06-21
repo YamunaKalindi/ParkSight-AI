@@ -212,6 +212,7 @@ The system focuses on transforming raw parking data into intuitive visual intell
 ---
 
 # 📂 Project Structure
+```text
 ParkSight-AI/
 │
 ├── app.py
@@ -237,6 +238,8 @@ ParkSight-AI/
 │
 ├── requirements.txt
 └── README.md
+
+```
 
 ---
 
