@@ -50,6 +50,15 @@ def show_hotspots(
         junction_df
         .iloc[0]["junction_name"]
     )
+    junction_parts = top_junction.split(" - ", 1)
+
+    junction_code = junction_parts[0]
+
+    junction_name = (
+        junction_parts[1]
+        if len(junction_parts) > 1
+        else top_junction
+    )
 
     top_station = (
         station_df
@@ -73,9 +82,14 @@ def show_hotspots(
     c1, c2, c3, c4 = st.columns(4)
 
     with c1:
+
         st.metric(
             "Most Critical Junction",
-            top_junction
+            junction_code
+        )
+
+        st.caption(
+            f"📍 {junction_name}"
         )
 
     with c2:
